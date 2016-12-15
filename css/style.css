@@ -1,0 +1,449 @@
+html,body{
+	min-height:1750px;
+	margin:0;
+	padding:0;
+}
+ body{
+	background:#c8c8c8 url(../img/bg-3.jg);
+	min-width:960px;
+	font-weight:700;
+	font-size:14px;
+	font-family:'PT Sans Narrow', sans-serif;
+	text-transform:uppercase;
+	color:#ffffff;	
+ }
+ .conteiner {
+	width:940px;
+	padding:0 10px;
+	margin:0 auto;
+}
+.clearfix::after{
+  content: " ";
+  clear: both;
+  display: table;
+}
+
+/*Шапка */
+
+.my-header {
+	background:#dbdbdb url(../img/aaaaa.png) no-repeat;
+	background-size: 100%; 
+	min-height:774px;
+	color:ffffff;
+}
+.my-menu{
+	min-height:70px;
+	width:560px;
+	float:right;
+}
+.my-menu a{
+	color: #000; 
+    text-decoration: none; 
+	display:block;
+	padding:25px 20px;
+}
+.my-menu a:hover{
+	color:#ef0909;
+}
+.my-menu ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+	font-size:0;
+}
+.my-menu li{
+	display:inline-block;
+	vertical-align:top;
+	font-size:16px;
+	line-height:20px;
+}
+
+.user-block{
+	max-width:150px;
+	float:left;
+	margin-top:5px;
+}
+
+.login{
+	position:relative;
+	display:inline-block;
+	vertical-align:top;
+	font-size:16px;
+	line-height:20px;
+	text-decoration: none; 
+	color:#ffffff;
+	padding:25px 20px 25px 50px;
+}
+.login:hover{
+	background:#242424;
+}
+.login::before{
+	content:"";
+	position:absolute;
+	top:28px;
+	left:20px;
+	width:18px;
+	height:18px;
+	background:url(../img/open.png);
+	
+}
+
+/*Логотип*/
+
+.logo{
+	width:520px;
+	height:350px;
+	margin-top:150px;
+	margin-left:400px;
+}
+
+/* Быстро Круто Дорого*/
+
+.section-item{
+	width:300px;
+	float:left;
+	margin-right:20px;
+	text-align:center;
+	position:relative;
+	margin-bottom:50px;
+	margin-top:200px;
+
+}
+.section-item p{
+	margin:10px;
+	margin-bottom:0;
+	color:#000;
+	
+}
+.section-name{
+	position:relative;
+	display:block;
+	font-size:30px;
+	line-height:42px;
+	margin-bottom:35px;
+	padding-bottom:35px;
+}
+.section-name::after{
+	content:"";  
+    position:absolute;
+	bottom:0;
+	left:50%;
+	display:block;
+	width:20px;
+	height:20px;
+	background-color:#ffffff;
+	margin-left:-10px;
+	transform:rotate(45deg);
+}
+.section-item:last-child{
+	margin-right:0;	
+}
+
+/* Общий вид для 4х отсеков (новости и тд)*/
+
+.index-content{
+	margin-bottom:30px;
+	padding:50px 80px;
+	color:#000000;
+	background: url(../img/index-content-shado.png)no-repeat center,#f8f5f2 url(../img/bg-2.png);
+	
+}
+.fotorama{
+	margin-left:30px;
+}
+.content-left{
+	float:left;
+	width:380px;
+}
+.content-right{
+	float:right;
+	width:300px;
+}
+
+/*Новости*/
+
+.content-title{
+	margin:0;
+	margin-bottom:25px;
+	font-size:30px;
+	line-height:42px;
+}
+.index-content p{
+	margin:0;
+	margin-bottom:25px;
+}
+.news{
+	margin:0;
+	padding:0;
+	padding-right:35px;
+	list-style:none;
+}
+.news li{
+	margin-bottom:25px;
+}
+.news p{
+	margin-bottom:0;
+}
+.news time{
+	text-transform:none;
+	font-weight:400;
+}
+
+/* Параметры Кнопок (все новости , как пройти и тд)*/
+
+.btn{
+	color:#ffffff;
+	background:#000000;
+	border:none;
+	outline:none;
+	cursor:pointer;
+	font-weight:700;
+	font-size:14px;
+	font-family:'PT Sans Narrow', sans-serif;
+	text-transform:uppercase;
+	text-decoration:none;
+	line-height:24px;
+	display:inline-block;
+	padding:10px 33px;
+	margin-right:16px;
+	text-align:center;
+	vertical-align:top;	
+}
+.btn:hover,.btn:active{
+	background-color:#663d15;
+}
+
+/*Галерея*/
+
+.gallery{
+	position:relative;
+	height:260px;
+	
+}
+.gallery-content{
+	height:164px;
+	margin:0;
+	background-color:#cccccc;
+	border:7px solid #ffffff;
+}
+.gallery-content img{
+	width:286px;
+	height:164px;
+}
+.gallery .btn{
+	position:absolute;
+	bottom:0;
+	width:140px;
+	margin:0;
+}
+.gallery-prev{
+	left:0;
+}
+.gallery-next{
+	right:0;
+}
+
+/* Оформление блока заполнения формы*/
+
+.form input{
+	background-color:#f9f6f3;
+	border:2px solid #000000;
+	outline:none;
+	font-size:14px;
+	font-family:'PT Sans Narrow', sans-serif;
+	text-transform:uppercase;
+	line-height:24px;
+	color:#000000;
+	width:106px;
+	padding:7px 15px;
+	float:left;
+	margin-right:20px;
+	margin-bottom:20px;
+}
+.form input:nth-child(2n){
+	margin:0;
+}
+.form .btn{
+	clear:both;
+	width:100%;
+}
+
+/*Подвал*/
+
+.my-footer{
+	margin-top:35px;
+	padding-top:60px;
+	padding-bottom:40px;
+	background:#252525 url(../img/bg-footer.png);
+	color:#ffffff;
+}
+.footer-contact{
+	min-height:90px;
+	margin-right:60px;
+	width:320px;
+	float:left;
+}
+.footer-contact a{
+	color:#ffffff;
+}
+.footer-contact a:hover{
+	text-decoration:none;
+}
+.footer-social{
+	min-height:90px;
+	width:180px;
+	float:left;
+	text-align:center;
+}
+.footer-social p{
+	margin:0;
+	padding-bottom:15px;
+}
+.social-btn{
+	display:inline-block;
+	width:43px;
+	height:43px;
+	margin:0 2px;
+	background:#000000;
+	font-size:0;
+	vertical-align:top;
+	text-decoration:none;
+}
+
+.social-btn-vk{
+	background:url(../img/vk.png);
+}
+.social-btn-fb{
+	background:url(../img/fb.png);
+}
+.social-btn-inst{
+	background:url(../img/inst.png);
+}
+.footer-copirigt{
+	max-width:180px;
+	float:right;
+}
+.footer-copirigt p{
+	margin:0;
+	margin-bottom:15px;
+	text-align:center;
+} 
+.footer-copirigt .btn{
+	margin-right:0;
+}
+   .ololo{
+	   margin-top:50px;
+   }
+   .main{
+	   border:3px solid #000;
+	   border-top:none;
+   }
+   .arctic{
+	   margin-top:30px;
+   }
+   
+  #about {
+   overflow: hidden;
+   color:#000;
+}
+#about .img {float:left; width:23%;overflow:hidden;margin-right:25px;}
+#about .img img {width:98%; border: #000 1px solid;}
+#about .text {text-align:justify;}
+#about .row .text p,#about .row .text ul {margin-bottom:0px;}
+#about .row .text .moreabout:hover {color:#11ABB0;text-decoration:none;}
+#about .row .text .moreabouthidden {display:none; }
+#about .row .text .moreabout {padding:0 5px; color:#f00; text-decoration:none;font-size:14px;}
+@media only screen and (max-width: 480px) 
+{
+	
+#about {padding-top:10px;}
+	
+#about .img { 
+	width:80%;padding:0 10%;
+	margin:15px 0;
+}
+#about .img img {
+	width:100%;
+}
+#about .text { 
+	width:90%;padding:0 5%;
+}
+}
+.twitter { background: #1F1F1F url(../img/bg-active.jpg) no-repeat center center;
+   background-size: cover !important; -webkit-background-size: cover !important; background-attachment: fixed;
+   position: relative; min-height: 200px; width: 100%; overflow: hidden; }
+.twitter > .content { max-width: 960px; margin: 0 auto; padding:0; overflow: hidden; }
+.twitter > .content > .head { float: left; width: 25%; font-size: 72px; line-height: 1; color: #fff;
+                 font-family: FontAwesome; font-style: normal; font-weight: normal; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+.twitter > .content > .posts { float: left; width: 75%; color: #fff; }
+.twitter .item .content { font-size: 20px; line-height: 1.5; margin-bottom: 15px; }
+.twitter .item .details { font-size: 14px; line-height: 1.3; margin-bottom: 15px; }
+@media only screen and (max-width: 767px) 
+{
+    .twitter > .content { padding:0; }
+    .twitter > .content > .head { float: none; width: auto; margin-bottom: 30px; text-align: center; }
+    .twitter > .content > .posts { float: none; width: auto; }
+}
+
+
+.twitter2 { background: #1F1F1F url(../img/bg-active3.jpg) no-repeat center center;
+   background-size: cover !important; -webkit-background-size: cover !important; background-attachment: fixed;
+   position: relative; min-height: 200px; width: 100%; overflow: hidden; }
+.twitter2 > .content2 { max-width: 960px; margin: 0 auto; padding:0; overflow: hidden; }
+.twitter2 > .content2 > .head2 { float: left; width: 25%; font-size: 72px; line-height: 1; color: #fff;
+                 font-family: FontAwesome; font-style: normal; font-weight: normal; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+.twitter2 > .content2 > .posts2 { float: left; width: 75%; color: #fff; }
+.twitter2 .item2 .content2 { font-size: 20px; line-height: 1.5; margin-bottom: 15px; }
+.twitter2.item2 .details2 { font-size: 14px; line-height: 1.3; margin-bottom: 15px; }
+@media only screen and (max-width: 767px) 
+{
+    .twitter2 > .content2 { padding:0; }
+    .twitter2 > .content2 > .head2 { float: none; width: auto; margin-bottom: 30px; text-align: center; }
+    .twitter2 > .content2 > .posts2 { float: none; width: auto; }
+}
+
+.twitter3 { background: #1F1F1F url(../img/bg-active2.jpg) no-repeat center center;
+   background-size: cover !important; -webkit-background-size: cover !important; background-attachment: fixed;
+   position: relative; min-height: 200px; width: 100%; overflow: hidden; }
+.twitter3 > .content3 { max-width: 960px; margin: 0 auto; padding:0; overflow: hidden; }
+.twitter3 > .content3 > .head3 { float: left; width: 25%; font-size: 72px; line-height: 1; color: #fff;
+                 font-family: FontAwesome; font-style: normal; font-weight: normal; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+.twitter3 > .content3 > .posts3 { float: left; width: 75%; color: #fff; }
+.twitter3 .item3 .content3 { font-size: 20px; line-height: 1.5; margin-bottom: 15px; }
+.twitter3.item3 .details3 { font-size: 14px; line-height: 1.3; margin-bottom: 15px; }
+@media only screen and (max-width: 767px) 
+{
+    .twitter3 > .content3 { padding:0; }
+    .twitter3 > .content3 > .head3 { float: none; width: auto; margin-bottom: 30px; text-align: center; }
+    .twitter3 > .content3 > .posts3 { float: none; width: auto; }
+}
+
+#topcontrol{ margin-bottom: 200px; }
+
+.demo {
+		width:100%;
+		height:100%;
+		border:1px solid #C0C0C0;
+		border-collapse:collapse;
+		border-spacing:2px;
+		padding:5px;
+	}
+	.demo caption {
+		caption-side:top;
+		text-align:center;
+	}
+	.demo th {
+		border:1px solid #C0C0C0;
+		padding:5px;
+		background:#F0F0F0;
+	}
+	.demo td {
+		border:1px solid #C0C0C0;
+		text-align:left;
+		padding:5px;
+		background:#FFFFFF;
+	}
+	
